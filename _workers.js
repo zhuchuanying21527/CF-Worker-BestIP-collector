@@ -1,7 +1,7 @@
 //V2.5版本，添加管理员登录参数，需要到CF worker环境变量里添加 ADMIN_PASSWORD，网页增加Token管理，登陆后可用
 // 自定义优质IP数量
 const FAST_IP_COUNT = 25; // 修改这个数字来自定义优质IP数量
-const AUTO_TEST_MAX_IPS = 200; // 自动测速的最大IP数量，避免测速过多导致超时
+const AUTO_TEST_MAX_IPS = 100; // 自动测速的最大IP数量，避免测速过多导致超时
 
 export default {
     async scheduled(event, env, ctx) {
@@ -2441,3 +2441,4 @@ export default {
       }
     });
   }
+
